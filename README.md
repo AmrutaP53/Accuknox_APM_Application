@@ -16,7 +16,7 @@ A security product that scans container images for vulnerabilities and helps use
 1. Enable users to upload new image to scan as well as scan their entire current image repository.
 2. Display a dashboard with vulnerability insights such as total images scanned, vulnerabilities found and statistics of the severity levels.
 3. Option to filter/sort based on severity, date (uploaded), scan status and image type.
-4. Suggest fixes for vulnerable images.
+4. Display any suggested fixes or information relate to the vulnerabilities found through public vulnerability databases or through open source tools.
 
 ## 3. User Stories
 1. **As a DevOps Engineer**, I want to scan my container images so that I can identify vulnerabilities.
@@ -41,20 +41,11 @@ A security product that scans container images for vulnerabilities and helps use
 4. **Usability:** The system should provide intuitive UI for security engineers and developers.
 
 ## 6. Wireframes
-*(Upload wireframe images separately in the repository under `/wireframes` folder and link them here.)*
 
-- **Dashboard Overview:**
-  ![Dashboard Wireframe](wireframes/dashboard.png)
-- **Image Details Page:**
-  ![Image Details Wireframe](wireframes/image_details.png)
-- **Filtering Panel:**
-  ![Filtering Wireframe](wireframes/filtering.png)
-- **Fix Recommendations:**
-  ![Fix Recommendations Wireframe](wireframes/fix_recommendations.png)
 
 ## 7. Development Considerations (TBD)
 - **Backend:**
-  - Use **Trivy** or **Clair** for vulnerability scanning 
+  - Leverage open source tools such as **Trivy** or **Clair** for vulnerability scanning 
   - Store results in a preferred database (SQL/NoSQL).
   - Develop API endpoints using **Python (Flask/Django) or Node.js**.
 
@@ -62,7 +53,7 @@ A security product that scans container images for vulnerabilities and helps use
   - Implement a responsive dashboard with filtering features.
 
 - **DevOps & Deployment:**
-  - Integrate with **DockerHub, AWS ECR, and GitHub Container Registry**.
+  - Integrate with popular container registries such as **DockerHub, AWS ECR, or GitHub Container Registry**.
   - Set up **CI/CD pipeline** for automatic scanning.
 
 ## 8. Next Steps
