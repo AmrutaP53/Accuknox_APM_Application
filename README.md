@@ -41,7 +41,8 @@ A security product that scans container images for vulnerabilities and helps use
 4. **Usability:** The system should provide intuitive UI for security engineers and developers.
 
 ## 6. Wireframes
-
+https://github.com/AmrutaP53/Accuknox_APM_Application/blob/main/Wireframe%20CIVS%201.jpg
+https://github.com/AmrutaP53/Accuknox_APM_Application/blob/main/Wireframe%20CIVS%202.jpg
 
 ## 7. Development Considerations (TBD)
 - **Backend:**
