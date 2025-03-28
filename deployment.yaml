@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: accuknox-apm-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: accuknox-apm-app
+  template:
+    metadata:
+      labels:
+        app: accuknox-apm-app
+    spec:
+      containers:
+      - name: accuknox-apm-app
+        image: amrutap5/accuknox-apm-app:latest
+        ports:
+        - containerPort: 8080
+
